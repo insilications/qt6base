@@ -1,0 +1,2 @@
+sd "\-D\-DDBUS_STATIC_BUILD" -- "-DDBUS_STATIC_BUILD" $(fd -uu --glob *.ninja)
+sd "\-D\-DDBUS_STATIC_BUILD" -- "-DDBUS_STATIC_BUILD" $(fd -uu --glob *.ninja)
