@@ -1,0 +1,93 @@
+-G Ninja
+-DCMAKE_INSTALL_PREFIX=/usr
+-DCMAKE_JOB_POOLS:STRING="compile=14;link=1"
+-DCMAKE_JOB_POOL_COMPILE:STRING="compile"
+-DCMAKE_JOB_POOL_LINK:STRING="link"
+-DCMAKE_NM=/usr/bin/gcc-nm
+-DCMAKE_RANLIB=/usr/bin/gcc-ranlib
+-DCMAKE_AR=/usr/bin/gcc-ar
+-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
+-DBUILD_SHARED_LIBS:BOOL=OFF
+-DWARNINGS_ARE_ERRORS:BOOL=OFF
+-DFEATURE_rpath:BOOL=OFF
+-DFEATURE_separate_debug_info:BOOL=OFF
+-DFEATURE_force_asserts:BOOL=OFF
+-DFEATURE_developer_build:BOOL=OFF
+-DFEATURE_journald:BOOL=ON
+-DFEATURE_gc_binaries:BOOL=OFF
+-DFEATURE_brotli:BOOL=OFF
+-DFEATURE_cups:BOOL=OFF
+-DFEATURE_avx512bw:BOOL=OFF
+-DFEATURE_avx512cd:BOOL=OFF
+-DFEATURE_avx512dq:BOOL=OFF
+-DFEATURE_avx512er:BOOL=OFF
+-DFEATURE_avx512f:BOOL=OFF
+-DFEATURE_avx512ifma:BOOL=OFF
+-DFEATURE_avx512pf:BOOL=OFF
+-DFEATURE_avx512vbmi:BOOL=OFF
+-DFEATURE_avx512vl:BOOL=OFF
+-DFEATURE_avx:BOOL=ON
+-DFEATURE_avx2:BOOL=ON
+-DINPUT_dbus=linked
+-DINPUT_openssl=linked
+-DFEATURE_use_bfd_linker:BOOL=ON
+-DFEATURE_reduce_relocations:BOOL=ON
+-DFEATURE_static_runtime:BOOL=ON
+-DFEATURE_pkg_config:BOOL=ON
+-DFEATURE_gui:BOOL=ON
+-DFEATURE_widgets:BOOL=ON
+-DFEATURE_dbus:BOOL=ON
+-DFEATURE_accessibility:BOOL=ON
+-DFEATURE_glib:BOOL=ON
+-DFEATURE_inotify:BOOL=ON
+-DFEATURE_pcre2:BOOL=ON
+-DFEATURE_ssl:BOOL=ON
+-DFEATURE_pdf:BOOL=ON
+-DFEATURE_fontconfig:BOOL=ON
+-DFEATURE_gtk3:BOOL=ON
+-DINPUT_opengl:BOOL=ON
+-DFEATURE_egl:BOOL=ON
+-DFEATURE_egl_x11:BOOL=ON
+-DFEATURE_vulkan:BOOL=ON
+-DFEATURE_xcb_xlib:BOOL=ON
+-DFEATURE_directfb:BOOL=OFF
+-DFEATURE_eglfs:BOOL=ON
+-DFEATURE_gbm:BOOL=ON
+-DFEATURE_kms:BOOL=ON
+-DFEATURE_linuxfb:BOOL=ON
+-DFEATURE_xcb:BOOL=ON
+-DFEATURE_libudev:BOOL=ON
+-DFEATURE_evdev=ON
+-DFEATURE_libinput:BOOL=ON
+-DFEATURE_mtdev:BOOL=ON
+-DFEATURE_xkbcommon:BOOL=ON
+-DFEATURE_gif:BOOL=ON
+-DFEATURE_ico:BOOL=ON
+-DFEATURE_libpng:BOOL=ON
+-DFEATURE_xml:BOOL=ON
+-DFEATURE_zstd:BOOL=ON
+-DFEATURE_libjpeg:BOOL=ON
+-DFEATURE_libmd4c:BOOL=ON
+-DFEATURE_system_doubleconversion:BOOL=ON
+-DFEATURE_system_freetype:BOOL=ON
+-DFEATURE_system_harfbuzz:BOOL=ON
+-DFEATURE_system_jpeg:BOOL=ON
+-DFEATURE_system_png:BOOL=ON
+-DFEATURE_system_xcb_xinput:BOOL=ON
+-DFEATURE_system_webp:BOOL=ON
+-DFEATURE_system_zlib:BOOL=ON
+-DFEATURE_system_pcre2:BOOL=ON
+-DFEATURE_system_zlib:BOOL=ON
+-DFEATURE_system_sqlite:BOOL=ON
+-DBUILD_qtwayland:BOOL=OFF
+-DINSTALL_SYSCONFDIR=/usr/share
+-DQT_BUILD_TESTS:BOOL:BOOL=OFF
+-DQT_BUILD_BENCHMARKS:BOOL:BOOL=OFF
+-DQT_BUILD_EXAMPLES:BOOL:BOOL=OFF
+-DCMAKE_C_FLAGS="-DNDEBUG -ggdb3 -ggnu-pubnames -Ofast -mno-vzeroupper --param=lto-max-streaming-parallelism=16 -march=native -mtune=native -Wall -Wl,--as-needed -Wl,--build-id=sha1 -Wl,--enable-new-dtags -Wl,--hash-style=gnu -Wl,-O2 -Wl,-z,now,-z,relro,-z,max-page-size=0x1000,-z,separate-code -Wno-error -mprefer-vector-width=256 -falign-functions=32 -fasynchronous-unwind-tables -fdevirtualize-at-ltrans -fno-math-errno -fno-semantic-interposition -Wl,-Bsymbolic-functions -fno-stack-protector -fno-trapping-math -ftree-loop-distribute-patterns -ftree-loop-vectorize -ftree-slp-vectorize -ftree-vectorize -fuse-ld=bfd -fuse-linker-plugin -malign-data=cacheline -feliminate-unused-debug-types -flive-range-shrinkage -flto=14 -fno-plt -mtls-dialect=gnu2 -Wl,-sort-common -Wno-error -Wp,-D_REENTRANT -fvisibility-inlines-hidden -pipe -ffat-lto-objects -fPIC -fomit-frame-pointer -static-libstdc++ -static-libgcc -Wl,--build-id=sha1 -Wno-inline"
+-DCMAKE_CXX_FLAGS="-DNDEBUG -ggdb3 -ggnu-pubnames -Ofast -mno-vzeroupper --param=lto-max-streaming-parallelism=16 -march=native -mtune=native -Wall -Wl,--as-needed -Wl,--build-id=sha1 -Wl,--enable-new-dtags -Wl,--hash-style=gnu -Wl,-O2 -Wl,-z,now,-z,relro,-z,max-page-size=0x1000,-z,separate-code -Wno-error -mprefer-vector-width=256 -falign-functions=32 -fasynchronous-unwind-tables -fdevirtualize-at-ltrans -fno-math-errno -fno-semantic-interposition -Wl,-Bsymbolic-functions -fno-stack-protector -fno-trapping-math -ftree-loop-distribute-patterns -ftree-loop-vectorize -ftree-slp-vectorize -ftree-vectorize -fuse-ld=bfd -fuse-linker-plugin -malign-data=cacheline -feliminate-unused-debug-types -flive-range-shrinkage -flto=14 -fno-plt -mtls-dialect=gnu2 -Wl,-sort-common -Wno-error -Wp,-D_REENTRANT -fvisibility-inlines-hidden -pipe -ffat-lto-objects -fPIC -fomit-frame-pointer -static-libstdc++ -static-libgcc -Wl,--build-id=sha1 -Wno-inline"
+-DCMAKE_EXE_LINKER_FLAGS="-DNDEBUG -ggdb3 -ggnu-pubnames -Ofast -mno-vzeroupper --param=lto-max-streaming-parallelism=16 -march=native -mtune=native -Wall -Wl,--as-needed -Wl,--build-id=sha1 -Wl,--enable-new-dtags -Wl,--hash-style=gnu -Wl,-O2 -Wl,-z,now,-z,relro,-z,max-page-size=0x1000,-z,separate-code -Wno-error -mprefer-vector-width=256 -falign-functions=32 -fasynchronous-unwind-tables -fdevirtualize-at-ltrans -fno-math-errno -fno-semantic-interposition -Wl,-Bsymbolic-functions -fno-stack-protector -fno-trapping-math -ftree-loop-distribute-patterns -ftree-loop-vectorize -ftree-slp-vectorize -ftree-vectorize -fuse-ld=bfd -fuse-linker-plugin -malign-data=cacheline -feliminate-unused-debug-types -flive-range-shrinkage -flto=14 -fno-plt -mtls-dialect=gnu2 -Wl,-sort-common -Wno-error -Wp,-D_REENTRANT -fvisibility-inlines-hidden -pipe -ffat-lto-objects -fPIC -fomit-frame-pointer -static-libstdc++ -static-libgcc -Wl,--build-id=sha1 -Wno-inline"
+-DCMAKE_MODULE_LINKER_FLAGS="-DNDEBUG -ggdb3 -ggnu-pubnames -Ofast -mno-vzeroupper --param=lto-max-streaming-parallelism=16 -march=native -mtune=native -Wall -Wl,--as-needed -Wl,--build-id=sha1 -Wl,--enable-new-dtags -Wl,--hash-style=gnu -Wl,-O2 -Wl,-z,now,-z,relro,-z,max-page-size=0x1000,-z,separate-code -Wno-error -mprefer-vector-width=256 -falign-functions=32 -fasynchronous-unwind-tables -fdevirtualize-at-ltrans -fno-math-errno -fno-semantic-interposition -Wl,-Bsymbolic-functions -fno-stack-protector -fno-trapping-math -ftree-loop-distribute-patterns -ftree-loop-vectorize -ftree-slp-vectorize -ftree-vectorize -fuse-ld=bfd -fuse-linker-plugin -malign-data=cacheline -feliminate-unused-debug-types -flive-range-shrinkage -flto=14 -fno-plt -mtls-dialect=gnu2 -Wl,-sort-common -Wno-error -Wp,-D_REENTRANT -fvisibility-inlines-hidden -pipe -ffat-lto-objects -fPIC -fomit-frame-pointer -static-libstdc++ -static-libgcc -Wl,--build-id=sha1 -Wno-inline"
+-DCMAKE_SHARED_LINKER_FLAGS="-DNDEBUG -ggdb3 -ggnu-pubnames -Ofast -mno-vzeroupper --param=lto-max-streaming-parallelism=16 -march=native -mtune=native -Wall -Wl,--as-needed -Wl,--build-id=sha1 -Wl,--enable-new-dtags -Wl,--hash-style=gnu -Wl,-O2 -Wl,-z,now,-z,relro,-z,max-page-size=0x1000,-z,separate-code -Wno-error -mprefer-vector-width=256 -falign-functions=32 -fasynchronous-unwind-tables -fdevirtualize-at-ltrans -fno-math-errno -fno-semantic-interposition -Wl,-Bsymbolic-functions -fno-stack-protector -fno-trapping-math -ftree-loop-distribute-patterns -ftree-loop-vectorize -ftree-slp-vectorize -ftree-vectorize -fuse-ld=bfd -fuse-linker-plugin -malign-data=cacheline -feliminate-unused-debug-types -flive-range-shrinkage -flto=14 -fno-plt -mtls-dialect=gnu2 -Wl,-sort-common -Wno-error -Wp,-D_REENTRANT -fvisibility-inlines-hidden -pipe -ffat-lto-objects -fPIC -fomit-frame-pointer -static-libstdc++ -static-libgcc -Wl,--build-id=sha1 -Wno-inline"
+-DCMAKE_ASM_FLAGS="-DNDEBUG -ggdb3 -ggnu-pubnames -Ofast -mno-vzeroupper --param=lto-max-streaming-parallelism=16 -march=native -mtune=native -Wall -Wl,--as-needed -Wl,--build-id=sha1 -Wl,--enable-new-dtags -Wl,--hash-style=gnu -Wl,-O2 -Wl,-z,now,-z,relro,-z,max-page-size=0x1000,-z,separate-code -Wno-error -mprefer-vector-width=256 -falign-functions=32 -fasynchronous-unwind-tables -fdevirtualize-at-ltrans -fno-math-errno -fno-semantic-interposition -Wl,-Bsymbolic-functions -fno-stack-protector -fno-trapping-math -ftree-loop-distribute-patterns -ftree-loop-vectorize -ftree-slp-vectorize -ftree-vectorize -fuse-ld=bfd -fuse-linker-plugin -malign-data=cacheline -feliminate-unused-debug-types -flive-range-shrinkage -flto=14 -fno-plt -mtls-dialect=gnu2 -Wl,-sort-common -Wno-error -Wp,-D_REENTRANT -fvisibility-inlines-hidden -pipe -ffat-lto-objects -fPIC -fomit-frame-pointer -static-libstdc++ -static-libgcc -Wl,--build-id=sha1 -Wno-inline"
+-DCMAKE_Fortran_FLAGS="-DNDEBUG -ggdb3 -ggnu-pubnames -Ofast -mno-vzeroupper --param=lto-max-streaming-parallelism=16 -march=native -mtune=native -Wall -Wl,--as-needed -Wl,--build-id=sha1 -Wl,--enable-new-dtags -Wl,--hash-style=gnu -Wl,-O2 -Wl,-z,now,-z,relro,-z,max-page-size=0x1000,-z,separate-code -Wno-error -mprefer-vector-width=256 -falign-functions=32 -fasynchronous-unwind-tables -fdevirtualize-at-ltrans -fno-math-errno -fno-semantic-interposition -Wl,-Bsymbolic-functions -fno-stack-protector -fno-trapping-math -ftree-loop-distribute-patterns -ftree-loop-vectorize -ftree-slp-vectorize -ftree-vectorize -fuse-ld=bfd -fuse-linker-plugin -malign-data=cacheline -feliminate-unused-debug-types -flive-range-shrinkage -flto=14 -fno-plt -mtls-dialect=gnu2 -Wl,-sort-common -Wno-error -Wp,-D_REENTRANT -fvisibility-inlines-hidden -pipe -ffat-lto-objects -fPIC -fomit-frame-pointer -static-libstdc++ -static-libgcc -Wl,--build-id=sha1 -Wno-inline"
