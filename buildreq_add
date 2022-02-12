@@ -2,7 +2,6 @@
 # picked up automatically. One name per line, no whitespace.
 alsa-lib
 alsa-lib-dev
-alsa-lib-dev32
 alsa-plugins
 alsa-tools
 alsa-tools-dev

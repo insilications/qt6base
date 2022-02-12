@@ -1,4 +1,9 @@
-for i in %{buildroot}/usr/bin/* ; do mv $i $i-qt6 ; done
+install -dm 0755 %{buildroot}/usr/bin/
+pushd %{buildroot}/usr/lib64/bin
+for i in * ; do
+    ln -sf /usr/lib64/bin/$i %{buildroot}/usr/bin/${i}-qt6
+done
+popd
 install -dm 0755 %{buildroot}/usr/lib64/haswell/
 pushd %{buildroot}/usr/lib64/haswell/
 for lib in ../lib*.so*; do
