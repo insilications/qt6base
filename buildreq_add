@@ -76,13 +76,10 @@ freetype-dev
 freetype-staticdev
 fribidi-dev
 gcc-dev
-gcc-libgcc32
-gcc-libstdc++32
 gettext
 gettext-bin
 git
 glibc-dev
-glibc-libc32
 glib-dev
 glib-staticdev
 gobject-introspection
