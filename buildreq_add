@@ -266,6 +266,9 @@ snappy-dev
 snappy-staticdev
 sqlite-autoconf-dev
 sqlite-autoconf-staticdev
+syntax-highlighting
+syntax-highlighting-dev
+syntax-highlighting-staticdev
 systemd-dev
 tiff-dev
 tiff-staticdev
