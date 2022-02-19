@@ -1,2 +1,3 @@
 #! cmake --build .
+exit 1
 ninja --verbose
