@@ -25,6 +25,7 @@ libinput.so.10
 libjpeg.so.62
 libm.so.6
 libmtdev.so.1
+libmvec.so.1
 libpango-1.0.so.0
 libpcre2-16.so.0
 libpng16.so.16
