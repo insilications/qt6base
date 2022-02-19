@@ -5,6 +5,7 @@
 -DCMAKE_INSTALL_SYSCONFDIR=/usr/share
 -DINSTALL_LIBDIR=/usr/lib64
 -DCMAKE_INSTALL_LIBDIR=/usr/lib64
+-DCMAKE_PREFIX_PATH="/usr;/usr/lib64;/usr/lib;/usr/local/cuda/lib64;/usr/share"
 -DINSTALL_ARCHDATADIR:STRING=/usr/lib64/qt6
 -DINSTALL_BINDIR:STRING=/usr/lib64/bin
 -DINSTALL_DATADIR:STRING=/usr/share/qt6

@@ -458,7 +458,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1645281869
+export SOURCE_DATE_EPOCH=1645289634
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -671,13 +671,12 @@ sd '(FLAGS.+)(\s\-fno\-fat\-lto\-objects)' -- '$1 -ffat-lto-objects' $(fd -uu --
 sd '(LINK_LIBRARIES.+)(\s\-fno\-fat\-lto\-objects)' -- '$1 -ffat-lto-objects' $(fd -uu --glob *.ninja)
 ## make_prepend64 end
 ## make_macro content
-exit 1
 ninja --verbose
 ## make_macro end
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1645281869
+export SOURCE_DATE_EPOCH=1645289634
 rm -rf %{buildroot}
 export GCC_IGNORE_WERROR=1
 ## altflags_pgo content
